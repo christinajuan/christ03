@@ -42,6 +42,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Restart"
+            android:onClick="restart"
+
             />
         <Button
             android:id="@+id/setting"
@@ -56,6 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="exit"
+            android:onClick="exit"
             />
 
     </LinearLayout>
@@ -66,6 +69,9 @@
         android:background="#522"
         android:layout_below="@id/topLine"
         android:layout_above="@id/buttonLine"
+        android:textSize="24sp"
+        android:textColor="#FFF"
+        android:textStyle="bold|italic"
 
         />
 </RelativeLayout>
