@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     >
     <RelativeLayout
+        android:id="@+id/topLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -15,8 +16,10 @@
             android:layout_height="wrap_content"
             android:text="Guess"
             android:layout_alignParentRight="true"
+            android:onClick="guess"
             />
         <EditText
+            android:id="@+id/input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -26,4 +29,43 @@
             />
 
     </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/buttonLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/restart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Restart"
+            />
+        <Button
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="setting"
+            />
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="exit"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/mesg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#522"
+        android:layout_below="@id/topLine"
+        android:layout_above="@id/buttonLine"
+
+        />
 </RelativeLayout>
