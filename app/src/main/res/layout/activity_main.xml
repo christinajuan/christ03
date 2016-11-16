@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     >
     <RelativeLayout
-        android:id="@+id/topLine"
+        android:id="@+id/top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -27,10 +27,10 @@
             android:layout_alignTop="@id/guess"
             android:layout_alignBottom="@id/guess"
             />
-
     </RelativeLayout>
+
     <LinearLayout
-        android:id="@+id/buttonLine"
+        android:id="@+id/bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -43,35 +43,42 @@
             android:layout_weight="1"
             android:text="Restart"
             android:onClick="restart"
-
+            />
+        <Button
+            android:id="@+id/restart2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Restart"
+            android:onClick="restart"
             />
         <Button
             android:id="@+id/setting"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="setting"
+            android:text="Setting"
             />
         <Button
             android:id="@+id/exit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="exit"
+            android:text="Exit"
             android:onClick="exit"
             />
 
     </LinearLayout>
+
     <TextView
         android:id="@+id/mesg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#522"
-        android:layout_below="@id/topLine"
-        android:layout_above="@id/buttonLine"
+        android:background="#ff0"
+        android:layout_below="@id/top"
+        android:layout_above="@id/bottom"
         android:textSize="24sp"
-        android:textColor="#FFF"
+        android:textColor="#f00"
         android:textStyle="bold|italic"
-
         />
 </RelativeLayout>
