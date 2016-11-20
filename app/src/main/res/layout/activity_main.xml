@@ -74,11 +74,11 @@
         android:id="@+id/mesg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ff0"
+        android:background="#3f50"
         android:layout_below="@id/top"
         android:layout_above="@id/bottom"
         android:textSize="24sp"
-        android:textColor="#f00"
+        android:textColor="#F00"
         android:textStyle="bold|italic"
         />
 </RelativeLayout>
